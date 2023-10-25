@@ -8,8 +8,8 @@ router.get('/', function(req, res, next) {
  else {
     value = req.query.x;
  }
- var result = Math.round(value);
-  res.render('computation', { com: `Math.round(${value}) is ${result}` });
+ var result =Math.log2(value);
+  res.render('computation', { com: `Math.log2(${value}) is ${result}` });
 });
 
 module.exports = router;
